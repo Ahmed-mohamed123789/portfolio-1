@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiRedux, SiFramer, SiBootstrap } from 'react-icons/si';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
 const skills = [
   { name: 'React', icon: SiReact, color: 'border-[#61DAFB]/30 bg-[#61DAFB]/10 group-hover:border-[#61DAFB] text-[#61DAFB]' },
@@ -13,7 +13,8 @@ const skills = [
   { name: 'Redux/Toolkit', icon: SiRedux, color: 'border-[#764ABC]/30 bg-[#764ABC]/10 group-hover:border-[#764ABC] text-[#764ABC]' },
   { name: 'Framer Motion', icon: SiFramer, color: 'border-[#0055FF]/30 bg-[#0055FF]/10 group-hover:border-[#0055FF] text-[#0055FF]' },
   { name: 'Git/GitHub', icon: FaGithub, color: 'border-gray-500/30 bg-gray-500/10 group-hover:border-gray-500 text-gray-700 dark:text-gray-300' },
-  { name: 'Bootstrap', icon: SiBootstrap, color: 'border-[#7952B3]/30 bg-[#7952B3]/10 group-hover:border-[#7952B3] text-[#7952B3]' },
+  { name: 'Bootstrap', icon: SiBootstrap, color: 'border-[#06B6D4]/30 bg-[#06B6D4]/10 group-hover:border-[#06B6D4] text-[#06B6D4]' },
+  { name: 'API Integration', icon: FaLink, color: 'border-black/20 dark:border-white/20 bg-black/5 dark:bg-white/5 group-hover:border-black dark:group-hover:border-white text-black dark:text-white' },
 ];
 
 export default function Skills() {
