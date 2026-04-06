@@ -16,24 +16,35 @@ export default function Contact() {
 
     setIsSubmitting(true);
 
+    // 👇 تحطه هنا
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("Missing EmailJS env variables");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       await emailjs.send(
-        'service_g88kpu4',
-        'template_zgrbwbg',
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        '901hlPHeO97BCOwHn'
+        publicKey
       );
+
       setIsSuccess(true);
       setFormData({ name: '', email: '', message: '' });
 
       setTimeout(() => setIsSuccess(false), 3000);
     } catch (error) {
       console.log("EMAILJS ERROR FULL:", error);
-      alert(error.text);
     } finally {
       setIsSubmitting(false);
     }
