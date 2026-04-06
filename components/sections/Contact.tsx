@@ -18,8 +18,8 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        'service_hifdluk',
-        'jgtmdbi',
+        'service_g88kpu4',
+        'template_zgrbwbg',
         {
           name: formData.name,
           email: formData.email,
@@ -33,8 +33,8 @@ export default function Contact() {
 
       setTimeout(() => setIsSuccess(false), 3000);
     } catch (error) {
-      console.log(error);
-      alert('Failed to send message');
+      console.log("EMAILJS ERROR FULL:", error);
+      alert(error.text);
     } finally {
       setIsSubmitting(false);
     }
@@ -117,6 +117,11 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="w-full glass-card p-6 sm:p-10 rounded-[2rem]"
           >
+            {isSuccess && (
+              <div className="mb-4 p-4 rounded-xl bg-green-500/10 border border-green-500 text-green-600 text-center font-medium">
+                ✅ Your message has been sent successfully!
+              </div>
+            )}
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <label htmlFor="name" className="text-sm font-medium text-gray-700 dark:text-gray-300 ml-1">
