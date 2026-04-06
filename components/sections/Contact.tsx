@@ -21,13 +21,12 @@ export default function Contact() {
         'service_g88kpu4',
         'template_zgrbwbg',
         {
-          name: formData.name,
-          email: formData.email,
+          from_name: formData.name,
+          from_email: formData.email,
           message: formData.message,
         },
         '901hlPHeO97BCOwHn'
       );
-
       setIsSuccess(true);
       setFormData({ name: '', email: '', message: '' });
 
