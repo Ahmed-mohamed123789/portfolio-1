@@ -35,15 +35,14 @@ const projects = [
     tech: ["HTML", "Bootstrap", "JavaScript"],
     liveUrl: "https://ahmed-mohamed123789.github.io/weather-project/",
     githubUrl: "https://github.com/Ahmed-mohamed123789/weather-project/",
-    // gradient: "from-cyan-500/20 via-sky-500/20 to-blue-500/20",
-    image: "/images/weather.png"   // 👈 ده الجديد
+    image: "/images/weather.png"
   }
 
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 relative overflow-hidden">
+    <section id="projects" className="mb-5 relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
 
         <motion.div

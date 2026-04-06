@@ -4,11 +4,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="mt-24 border-t border-black/10 dark:border-white/10 bg-[var(--color-surface)]/30 backdrop-blur-md">
+    <footer className=" border-t border-black/10 dark:border-white/10  backdrop-blur-md">
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex flex-col items-center md:items-start">
           <Link href="/" className="text-xl font-bold tracking-tighter mb-2">
-            Ahmed.dev
+            Ahmed Mohamed
           </Link>
           <p className="text-sm text-gray-600 dark:text-gray-400">
             Frontend Developer | React & Next.js Specialist
@@ -40,7 +40,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      
+
       <div className="border-t border-black/5 dark:border-white/5 py-6 mt-4">
         <p className="text-center text-sm text-gray-500">
           © {currentYear} Ahmed Mohamed Alshrqawy. All rights reserved.

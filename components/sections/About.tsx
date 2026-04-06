@@ -10,7 +10,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="pt-24 relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
 
         <motion.div

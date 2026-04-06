@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col">
       <Hero />
-      <div className="relative z-10 bg-background flex flex-col gap-12 sm:gap-24 md:gap-32 pb-24">
+      <div className="relative z-10 bg-background flex flex-col gap-12 sm:gap-24 md:gap-32 ">
         <About />
         <Skills />
         <Projects />
